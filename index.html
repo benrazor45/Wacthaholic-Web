@@ -1,36 +1,42 @@
 <?xml version='1.0' encoding='UTF-8' ?>
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
-    <head>
-        <meta charset="UTF-8"/>
-        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Watchaholic - Buy, Fitting, Sell</title>
-        <link rel="shortcut icon" href="img/logo1.png"/>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-        <!-- gsap -->
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js" integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
-        <!-- css -->
-        <link rel="stylesheet" href="css/index.css"/>
-        
-    </head>
-    <body>
-        <div class="container">
-            <div id="Home">
-                <div class="row">
-                    <div class="col-12 ">
-                        <div class="stripes">
-                            <div class="line-one" style="z-index: 0;"></div>
-                            <div class="line-two" style="z-index: 0;"></div>
-                        </div>
-                        <!-- navbar============== -->
-                        <form>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:h="http://xmlns.jcp.org/jsf/html">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Watchaholic - Buy, Fitting, Sell</title>
+    <link rel="shortcut icon" href="img/logo1.png" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- gsap -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
+        integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U=" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="css/index.css" />
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="Home">
+            <div class="row">
+                <div class="col-12 ">
+                    <div class="stripes">
+                        <div class="line-one" style="z-index: -1;"></div>
+                        <div class="line-two" style="z-index: -1;"></div>
+                    </div>
+                    <!-- navbar============== -->
+                    <form>
                         <nav id="nav-menu">
                             <div class="logo">
                                 <span>WATCHAHOLIC</span>
@@ -39,67 +45,69 @@
                                 <li><a class="active" href="#Home">Home</a></li>
                                 <li><a class="active" href="login.html">Login</a></li>
                                 <li><a class="active" href="#products">Products</a></li>
-                                <li><a class="active" href="#Services">Our Services</a></li>
+                                <li><a class="active" href="#services">Our Services</a></li>
+                                <li><a href="cart.html"><i class="fa-solid fa-cart-shopping"></i>&nbsp Chart</a></li>
                             </ul>
-                            <div class="icons">
-                                <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
-                                <a href="profile.html"><i class="fa-solid fa-user"></i></a>
+                            <div class="menu-toogle">
+                                <input type="checkbox"/>
+                                <span></span>
+                                <span></span>
+                                <span></span>
                             </div>
-                
-                        </nav> 
-                        </form>
-                        
-                    </div>
-                    
-                </div>
-            </div>
-           
-            <div class="row">
-                <div class="col-6 "> 
+                        </nav>
+                    </form>
 
-                     <div class="img">
-                        <img src="img/watchh.png" alt=""/>
-                     </div>
                 </div>
-                <div class="col-6 ">
-                    <div class="title">
-                        <p>Smart, Inteligence</p>
-                        <span>Watchaholic.</span>
-                    </div>
-                    <div class="btn btn-lg btn-sm btn-xs btn-md">
-                        <a href="user-dashboard.html">Shop Now</a>
-                    </div>
-                      
-                </div>          
+
             </div>
-            <br></br><br></br><br></br><br></br>
-            <div class="row">
-                <div class="col-12" >
-                    <div id="products">
-                        <h1 class="products-title">Products</h1>
-                    </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6 ">
+
+                <div class="img">
+                    <img src="img/watchh.png" alt="" />
+                </div>
+            </div>
+            <div class="col-6 ">
+                <div class="title">
+                    <p>Smart, Inteligence</p>
+                    <span>Watchaholic.</span>
+                </div>
+                <div class="btn btn-lg btn-sm btn-xs btn-md">
+                    <a href="user-dashboard.html">Shop Now</a>
+                </div>
+
+            </div>
+        </div>
+        <br></br><br></br><br></br><br></br>
+        <div id="products">
+            <div class="row" >
+                <div class="col-lg-12 col-md-12">
+                    <h1 class="products-title">Products</h1>
                 </div>
             </div>
             <br></br>
-            <div class="row">
-                <div class="col-4">
+            <div class="row" style="margin-top: 15px;">
+                <div class="col-lg-4 col-md-12">
                     <div class="box">
                         <div class="card">
                             <div class="small_card">
                                 <i class="fa-solid fa-heart"></i>
                                 <i class="fa-solid fa-share"></i>
                             </div>
-            
+
                             <div class="image">
                                 <img src="img/watchh.png">
                             </div>
-            
+
                             <div class="products_text">
-                                <h2 style="margin-top: -10px; font-family:'Poppins'; font-size: 20px; ">Xiaomi Mi Band</h2>
+                                <h2 style="margin-top: -10px; font-family:'Poppins'; font-size: 20px; ">Xiaomi Mi Band
+                                </h2>
                                 <p>
                                     Best of Xiaomi smart-watch class. Water proofed.
                                 </p>
-                                <h3>$100.99</h3>
+                                <h3>Rp 1.650.000</h3>
                                 <div class="products_star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -109,28 +117,29 @@
                                 </div>
                                 <a href="#" class="btn-add">Add To Cart</a>
                             </div>
-            
+
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-12">
                     <div class="box">
                         <div class="card">
                             <div class="small_card">
                                 <i class="fa-solid fa-heart"></i>
                                 <i class="fa-solid fa-share"></i>
                             </div>
-            
+
                             <div class="image">
-                                <img src="img/watchh.png">
+                                <img src="img/awhermes.png">
                             </div>
-            
+
                             <div class="products_text">
-                                <h2 style="margin-top: -10px; font-family:'Poppins'; font-size: 20px; ">Xiaomi Mi Band</h2>
+                                <h2 style="margin-top: -10px; font-family:'Poppins'; font-size: 20px; ">Apple Watch Hermes
+                                </h2>
                                 <p>
-                                    Best of Xiaomi smart-watch class. Water proofed.
+                                    Best of Samsung smart-watch class. Strong architecture.
                                 </p>
-                                <h3>$100.99</h3>
+                                <h3>Rp 4.120.000</h3>
                                 <div class="products_star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -140,28 +149,29 @@
                                 </div>
                                 <a href="#" class="btn-add">Add To Cart</a>
                             </div>
-            
+
                         </div>
                     </div>
                 </div>
-                <div class="col-4">
+                <div class="col-lg-4 col-md-12">
                     <div class="box">
                         <div class="card">
                             <div class="small_card">
                                 <i class="fa-solid fa-heart"></i>
                                 <i class="fa-solid fa-share"></i>
                             </div>
-            
+
                             <div class="image">
-                                <img src="img/watchh.png">
+                                <img src="img/apple.png">
                             </div>
-            
+
                             <div class="products_text">
-                                <h2 style="margin-top: -10px; font-family:'Poppins'; font-size: 20px; ">Xiaomi Mi Band</h2>
+                                <h2 style="margin-top: -10px; font-family:'Poppins'; font-size: 20px; ">Apple Watch
+                                </h2>
                                 <p>
-                                    Best of Xiaomi smart-watch class. Water proofed.
+                                    Best of Apple smart-watch class. Elegant comfy looks.
                                 </p>
-                                <h3>$100.99</h3>
+                                <h3>Rp 2.450.000</h3>
                                 <div class="products_star">
                                     <i class="fa-solid fa-star"></i>
                                     <i class="fa-solid fa-star"></i>
@@ -171,71 +181,111 @@
                                 </div>
                                 <a href="#" class="btn-add">Add To Cart</a>
                             </div>
-            
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-             
-
-        
-
-         
 
 
-         <!--Produts-->
-        
-    
-
-         <!--Footer-->
-         <footer>
-            <div class="footer_main">
-                <div class="tag">
-                    <h1>Contact</h1>
-                    <a href="#"><i class="fa-solid fa-house"></i>No. 86/Depok/Indonesia</a>
-                    <a href="#"><i class="fa-solid fa-phone"></i>+6281993159779</a>
-                    <a href="#"><i class="fa-solid fa-envelope"></i>farhanadinugraha17@gmail.com</a>
-                </div>
-    
-                <div class="tag">
-                    <h1>Get Help</h1>
-                    <a href="#" class="center">FAQ</a>
-                    <a href="#" class="center">Shipping</a>
-                    <a href="#" class="center">Returns</a>
-                    <a href="#" class="center">Payment Options</a>
-                </div>
-    
-                <div class="tag">
-                    <h1>Our Stores</h1>
-                    <a href="#" class="center">Jakarta</a>
-                    <a href="#" class="center">Tangerang</a>
-                    <a href="#" class="center">Depok</a>
-                    <a href="#" class="center">Bogor</a>
-                </div>
-    
-                <div class="tag">
-                    <h1>Follow Us</h1>
-                    <div class="social_link">
-                        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-                    </div>
-                </div>
-    
-                <div class="tag">
-                    <h1>Newsletter</h1>
-                    <div class="search_bar">
-                        <input type="text" placeholder="You email id here">
-                        <button type="submit">Subscribe</button>
-                    </div>
-                </div>
-    
+        <div class="row">
+            <div class="col-lg-12 col-md-12">
+                <p class="see-more-text"><a style="text-decoration: none; color: #ff3131;" href="shop.html">See more</a>
+                    </pa>
             </div>
-        </footer>
-    
-         
-    </body>
-</html>
+        </div>
+        <br></br><br></br><br></br>
+        <div id="services">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="services-title">Our Services</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="services_cards">
+                    <div class="col-12">
+                        <div class="services_box">
+                            <i class="fa-solid fa-truck-fast"></i>
+                            <h3>Fast Delivery</h3>
+                            <p>
+                                We prodive you several shipping methods with fast delivery ability.
+                            </p>
+                        </div>
 
+                    </div>
+                    <div class="col-12">
+                        <div class="services_box">
+                            <i class="fa-solid fa-rotate-left"></i>
+                            <h3>Returnments and Warranty</h3>
+                            <p>
+                               5 days returnments after purchasing and 1 year warranty. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="services_box" style="">
+                            <i class="fa-solid fa-headset"></i>
+                            <h3>24 x 7 Support</h3>
+                            <p>
+                                Easy communication between you and us
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </div>
+    <br></br><br></br><br></br>
+    
+    <div class="row footer-watch">
+        <div class="col-12">
+            <footer>
+                <div class="footer_main">
+                    <div class="lokasi tag">
+                        <h1 class="ttle-footer">Contact</h1>
+                        <a href="#"><i class="fa-solid fa-house"></i>16435/Jakarta/Indonesia</a>
+                        <a href="#"><i class="fa-solid fa-phone"></i>+62 819 7777 4312</a>
+                        <a href="#"><i class="fa-solid fa-envelope"></i>watchaholic@company.id</a>
+                    </div>
+
+                    <div class="tag">
+                        <h1 class="ttle-footer">Get Help</h1>
+                        <a href="#" class="center">About</a>
+                        <a href="#" class="center">Shipping</a>
+                    </div>
+
+                    <div class="tag">
+                        <h1 class="ttle-footer">Our Stores</h1>
+                        <a href="#" class="center">Japan</a>
+                        <a href="#" class="center">Indonesia</a>
+                    </div>
+
+                    <div class="tag">
+                        <h1 class="ttle-footer">Follow Us</h1>
+                        <div class="social_link">
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="tag">
+                        <h1 class="ttle-footer">Subscribe us</h1>
+                        <div class="search_bar">
+                            <input type="text" placeholder="You email id here">
+                            <button type="submit">Subscribe</button>
+                        </div>
+                    </div>
+
+                </div>
+            </footer>
+        </div>
+    </div>
+    
+
+</body>
+
+</html>
