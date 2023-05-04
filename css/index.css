@@ -279,7 +279,7 @@ nav ul li a:hover::after {
 .products-title{
     font-family: poppins;
     text-align: center;
-    font-size: 2.5vw;
+    font-size: 2rem;
     letter-spacing: -0.1vw;
     font-weight: bold;
     color: black;
@@ -290,9 +290,19 @@ nav ul li a:hover::after {
 .see-more-text{
     font-family: 'Poppins';
     position: relative;
-    left: 90%;
+    left: 3%;
     top: 50%;
 
+}
+.services-title{
+    font-family: poppins;
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: -0.1vw;
+    font-weight: bold;
+    color: black;
+    position: relative;
+    top: 3vw;
 }
 
  .services_cards{
@@ -518,6 +528,13 @@ footer .footer_main .tag .search_bar button{
     nav ul {
        width: 50%;
     }
+    .box{
+        padding-top: 10px;
+    }
+    .see-more-text{
+        left: 0;
+    
+    }
 
 
 }
@@ -546,6 +563,7 @@ footer .footer_main .tag .search_bar button{
             transform: translateX(100%);
             transition: all 1s;
             opacity: 0;
+            text-align: left;
         }
     
         nav ul.slide {
@@ -579,10 +597,15 @@ footer .footer_main .tag .search_bar button{
         transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
+        text-align: left;
     }
     nav ul.slide {
         opacity: 1;
         transform: translateX(0);
+        
+    }
+    .box{
+        padding-top: 10px;
     }
 }
 
@@ -594,11 +617,12 @@ footer .footer_main .tag .search_bar button{
 
 
     }
-    .box-row{
-        width: 100%;
-        display: flex;
-        float: none;
-    
+    .products-title{
+        font-size: 20px;
+        margin-bottom: -4rem;
+    }
+    .services-title{
+        font-size: 20px;
     }
     .lokasi{
         width: 20rem;
@@ -612,5 +636,8 @@ footer .footer_main .tag .search_bar button{
     }
     a.ttle-footer{
         font-size: 20px;
+    }
+    .see-more-text{
+        left: 0;
     }
  }
