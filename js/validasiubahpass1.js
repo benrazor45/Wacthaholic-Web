@@ -15,7 +15,7 @@ function validated(){
 		newpass.focus();
 		return false;
 	}
-	if (newpass1.value.length < 6) {
+	if (newpass1.value.length < 9) {
 		newpass1.style.border = "1px solid red";
 		pass1_error.style.display = "block";
 		newpass1.focus();
@@ -31,7 +31,7 @@ function newpass_Verify(){
 	}
 }
 function newpass1_Verify(){
-	if (newpass1.value.length >= 5) {
+	if (newpass1.value.length >= 8) {
 		newpass1.style.border = "1px solid silver";
 		pass1_error.style.display = "none";
 		return true;
