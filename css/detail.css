@@ -71,13 +71,7 @@ nav ul li a:hover::after {
     font-weight: bold;
     text-transform: uppercase;
 }
-.menu-toogle {
-    display: flex;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
-}
+
 .btn-add{
     margin-bottom: 25px;
     text-decoration: none;
@@ -112,48 +106,59 @@ nav ul li a:hover::after {
     width: 414px;
 }
 
+
+/*Hamburger Menu*/
+.menu-toogle {
+    display: flex;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
 /*Hamburger Menu Animation*/
 .menu-toogle span:nth-child(2) {
-    transform-origin: 0 0;
+   transform-origin: 0 0;
+}
+
+.menu-toogle span:nth-child(4) {
+    transform-origin: 0 100%;
  }
  
- .menu-toogle span:nth-child(4) {
-     transform-origin: 0 100%;
-  }
-  
- .menu-toogle input:checked ~ span:nth-child(2) {
-     background-color: #ffffff;
-     transform: rotate(45deg) translate(-1px, -1px);
- }
- 
- .menu-toogle input:checked ~ span:nth-child(4) {
-     background-color: #ffffff;
-     transform: rotate(-45deg) translate(-1px, 0);
- }
- 
- .menu-toogle input:checked ~ span:nth-child(3) {
-     opacity: 0;
-     transform: scale(0);
- }
- .menu-toogle input {
-     position: absolute;
-     width: 40px;
-     height: 28px;
-     top: -5px;
-     left: -7px;
-     opacity: 0;
-     cursor: pointer;
-     z-index: 2;
- }
- 
- .menu-toogle span { 
-     display: block;
-     width: 28px;
-     height: 3px;
-     background-color: #000000;
-     border-radius: 3px;
-     transition: all 0.5s;
- }
+.menu-toogle input:checked ~ span:nth-child(2) {
+    background-color: #ffffff;
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toogle input:checked ~ span:nth-child(4) {
+    background-color: #ffffff;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toogle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+.menu-toogle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    top: -5px;
+    left: -7px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toogle span { 
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+
 
  /*Footer*/
 
