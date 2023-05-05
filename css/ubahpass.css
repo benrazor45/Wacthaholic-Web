@@ -112,6 +112,20 @@ button {
   cursor: pointer;
 }
 
+.login_form #email_error,
+.login_form #pass_error{
+	margin-top: 3px;
+	width: 410px;
+	font-size: 18px;
+	color: #ffffff;
+	background: rgba(255, 0, 0, 0.1);
+	text-align: center;
+	padding: 3px 3px;
+	border-radius: 3px;
+	border: 1px solid #EF9A9A;
+	display: none;
+}
+
 @media only screen and (max-width: 576px) {
   .wrapper {
     width: 65%;

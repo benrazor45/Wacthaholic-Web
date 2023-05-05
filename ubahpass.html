@@ -12,14 +12,14 @@
    
       <div class="form signup1">
         <header>Forgot Password?</header>
-        <form action="#">
-          <input type="text" placeholder="Email address" required />
-          <button><a href="ubahpass1.html">Submit</a></button>
+        <form class="login_form" action="ubahpass1.html" method="post" name="form" onsubmit="return validated()">
+          <input autocomplete="off" placeholder="Email address" type="text" name="email">
+          <div id="email_error">Please fill up your Email or Phone</div>
           <a href="login.html">Back</a>
+          <button type="submit">Login</button>
         </form>
-      
       </div>
-
+      <script src="js/validasiubahpass.js"></script>
     </section>
   </body>
 </html>

@@ -27,11 +27,13 @@
 
       <div class="form login">
         <header>Login</header>
-        <form action="#">
-          <input type="text" placeholder="Email address" required />
-          <input type="password" placeholder="Password" required />
+        <form class="login_form" action="index.html" method="post" name="form" onsubmit="return validated()">
+          <input autocomplete="off" placeholder="Email address" type="text" name="email">
+          <div id="email_error">Please fill up your Email or Phone</div>
+          <input type="password" placeholder="Password" name="password">
+          <div id="pass_error">Please fill up your Password</div>
           <a href="ubahpass.html">Forgot password?</a>
-         <button><a href="index.html">Login</a></button>
+          <button type="submit">Login</button>
         </form>
       </div>
 
@@ -47,6 +49,7 @@
           wrapper.classList.remove("active");
         });
       </script>
+      	<script src="js/validasi.js"></script>
     </section>
   </body>
 </html>
