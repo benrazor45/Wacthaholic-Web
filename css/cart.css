@@ -201,10 +201,12 @@ th:last-child {
 
 }
 /*Footer*/
+
 footer{
     width: 100%;
     margin: 0;
    z-index: 1;
+   position: relative;
 
 }
 
@@ -225,7 +227,7 @@ footer .footer_main .tag .center{
 }
 
 footer .footer_main .tag h1{
-    font-size: 25px;
+    font-size: 1rem;
     margin: 25px 0;
     color: #ff3131;
 }
@@ -235,6 +237,7 @@ footer .footer_main .tag a{
     color: white;
     text-decoration: none;
     margin: 9px 0;
+    font-size: 13px;
 }
 
 footer .footer_main .tag a i{
@@ -282,7 +285,7 @@ footer .footer_main .tag .social_link a::after{
     height: 100%;
     top: 0;
     left: -90px;
-    background: linear-gradient(-45deg, #f70505 , #e4d504);
+    background: linear-gradient(-45deg, #c72092 , #6c14d0);
     position: absolute;
     z-index: -10;
     transition: 0.5s;
@@ -313,13 +316,14 @@ footer .footer_main .tag .search_bar input{
 
 footer .footer_main .tag .search_bar button{
     padding: 7px 15px;
-    background: linear-gradient(to right, #f70505 , #e4d504);
+    background: linear-gradient(to right, #c72092 , #6c14d0);
     border: none;
     margin-top: 15px;
     border-radius: 25px;
     color: white;
     cursor: pointer;
 }
+
 /*Hamburger Menu*/
 .menu-toogle {
     display: flex;
@@ -423,11 +427,18 @@ footer .footer_main .tag .search_bar button{
      
     }
 
-@media screen and (min-width:  930px) {
-    .menu-toogle {
-        display: none;
+    @media screen and (min-width:  930px) {
+        .menu-toogle {
+            display: none;
+    
+        }
+        .tag {
+            text-align: center;
+            align-content: center;
+    
+        }
+      
     }
-}
 
 @media screen and (max-width:  930px) {
     nav ul {

@@ -1,13 +1,3 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : Oct 11, 2022, 5:23:06 PM
-    Author     : Benaya
-*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;500;700&display=swap');
 html,
 body {
     margin: 0;
@@ -18,25 +8,6 @@ body {
     scroll-behavior: smooth;
     box-sizing: border-box;
     overflow-x: hidden ;
-}
-
-
-.line-one {
-    position: fixed;
-    width: 15px;
-    height: 100%;
-    background: #ff3131;
-    left: 23%;
-
-}
-
-.line-two {
-    position: fixed;
-    width: 25px;
-    height: 100%;
-    background: #183d79;
-    left: 25%;
-
 }
 
 nav {
@@ -91,7 +62,6 @@ nav ul li a::after {
 nav ul li a:hover::after {
     width: 100%;
 }
-
 .logo {
     position: relative;
     left: 2vw;
@@ -99,83 +69,6 @@ nav ul li a:hover::after {
     text-transform: uppercase;
 }
 
-.search {
-    position: fixed;
-    right: 160px;
-}
-
-.menu {
-    position: fixed;
-    right: 100px;
-}
-
-.img img {
-    position: relative;
-    width: 100%;
-    top: 80px;
-    
-   
-}
-
-.title {
-
-    position: relative;
-    line-height: .5;
-    font-size: 8vw;
-    font-weight: 700;
-    letter-spacing: -0.6vw;
-    top: 20vw;
-    left: -10%;
-    
-    
-}
-
-.title p {
-    position: inherit;
-    font-size: 2vw;
-    font-weight: 300;
-    color: grey;
-    text-transform: uppercase;
-    letter-spacing: 1vw;
-    padding-bottom: 1vw;
-
-}
-
-
-.btn a{
-    position: relative;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: #ff3131;
-    color: #fff;
-    padding: 1vw 2vw;
-    border-radius: 4px;
-    transition: .4s;
-    top: 23vw;
-    left: 13vw;
-
-}
-
-.btn a:hover {
-    background: #000;
-    color: #fff;
-}
-
-.btn-add{
-    margin-bottom: 20px;
-    text-decoration: none;
-    text-transform: uppercase;
-    background: #ff3131;
-    color: #fff;
-    padding: 10px 10px;
-    border-radius: 10px;
-    transition: .4s;
-    font-size: 10px;
-}
-.btn-add:hover {
-    background: #000;
-    color: #fff;
-}
 
 
 .products{
@@ -217,7 +110,7 @@ nav ul li a:hover::after {
 }
  .box .card{
     width: 100%;
-    height: 70vh;
+    height: 60vh;
     box-shadow: 0 0 8px #6c14d0;
     border-radius: 5px;
     text-align: center;
@@ -286,68 +179,73 @@ nav ul li a:hover::after {
     position: relative;
     top: 3vw;
 }
-
-.see-more-text{
-    font-family: 'Poppins';
-    position: relative;
-    left: 3%;
-    top: 50%;
-
+.btn-add{
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: #ff3131;
+    color: #fff;
+    padding: 10px 10px;
+    border-radius: 10px;
+    transition: .4s;
+    font-size: 10px;
 }
-.services-title{
-    font-family: poppins;
-    text-align: center;
-    font-size: 2rem;
-    letter-spacing: -0.1vw;
-    font-weight: bold;
-    color: black;
-    position: relative;
-    top: 3vw;
+.btn-add:hover {
+    background: #000;
+    color: #fff;
 }
 
- .services_cards{
-    width: 80%;
-    margin: 0 auto;
-    display: grid;
-    align-items: center;
-    position: relative;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    float: left;
-    top: 5vw;
-    justify-content: center;
-    background-color: white;
-    border-radius: 50px;
-    border: 1rem black;
-    padding-top: 30px;  
-    box-shadow: 0 0 8px #6c14d0;  
- 
-
-}
-
-/*Footer*/
-
-.services_box i{
-    font-size: 40px;
-    color: orange;
-    margin: 20px 0;
-    cursor: pointer;
+/*Hamburger Menu*/
+.menu-toogle {
     display: flex;
-    justify-content: center;
-    
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
 }
 
-.services_box h3{
-    margin-bottom: 12px;
-    font-size: 19px;
-    text-align: center;
+/*Hamburger Menu Animation*/
+.menu-toogle span:nth-child(2) {
+   transform-origin: 0 0;
 }
 
- .services_box p{
-    text-align: center;
-    color: #919191;
-    margin-bottom: 60px;
+.menu-toogle span:nth-child(4) {
+    transform-origin: 0 100%;
+ }
+ 
+.menu-toogle input:checked ~ span:nth-child(2) {
+    background-color: #ffffff;
+    transform: rotate(45deg) translate(-1px, -1px);
 }
 
+.menu-toogle input:checked ~ span:nth-child(4) {
+    background-color: #ffffff;
+    transform: rotate(-45deg) translate(-1px, 0);
+}
+
+.menu-toogle input:checked ~ span:nth-child(3) {
+    opacity: 0;
+    transform: scale(0);
+}
+.menu-toogle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    top: -5px;
+    left: -7px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.menu-toogle span { 
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: #000000;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
 
 footer{
     width: 100%;
@@ -470,56 +368,6 @@ footer .footer_main .tag .search_bar button{
     color: white;
     cursor: pointer;
 }
-.menu-toogle {
-    display: flex;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
-}
-
-/*Hamburger Menu Animation*/
-.menu-toogle span:nth-child(2) {
-   transform-origin: 0 0;
-}
-
-.menu-toogle span:nth-child(4) {
-    transform-origin: 0 100%;
- }
- 
-.menu-toogle input:checked ~ span:nth-child(2) {
-    background-color: #ffffff;
-    transform: rotate(45deg) translate(-1px, -1px);
-}
-
-.menu-toogle input:checked ~ span:nth-child(4) {
-    background-color: #ffffff;
-    transform: rotate(-45deg) translate(-1px, 0);
-}
-
-.menu-toogle input:checked ~ span:nth-child(3) {
-    opacity: 0;
-    transform: scale(0);
-}
-.menu-toogle input {
-    position: absolute;
-    width: 40px;
-    height: 28px;
-    top: -5px;
-    left: -7px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
-}
-
-.menu-toogle span { 
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: #000000;
-    border-radius: 3px;
-    transition: all 0.5s;
-}
 
 /*Responsive Breakpoint*/
 @media only screen and (max-width: 768px) {
@@ -530,15 +378,22 @@ footer .footer_main .tag .search_bar button{
     nav ul {
        width: 50%;
     }
-    .box{
-        padding-top: 10px;
-    }
-    .see-more-text{
-        left: 0;
-    
+    .cart-info p{
+        display:none;
     }
 
+}
+@media screen and (min-width:  930px) {
+    .menu-toogle {
+        display: none;
 
+    }
+    .tag {
+        text-align: center;
+        align-content: center;
+
+    }
+  
 }
 
 @media only screen and (max-width: 576px) {
@@ -561,11 +416,10 @@ footer .footer_main .tag .search_bar button{
             flex-direction: column;
             align-items: center;
             background-color: #ffffff;
-            z-index: 1;
+            z-index: -1;
             transform: translateX(100%);
             transition: all 1s;
             opacity: 0;
-            text-align: left;
         }
     
         nav ul.slide {
@@ -581,14 +435,7 @@ footer .footer_main .tag .search_bar button{
 @media screen and (min-width:  930px) {
     .menu-toogle {
         display: none;
-
     }
-    .tag {
-        text-align: center;
-        align-content: center;
-
-    }
-  
 }
 
 @media screen and (max-width:  930px) {
@@ -602,51 +449,13 @@ footer .footer_main .tag .search_bar button{
         flex-direction: column;
         align-items: center;
         background-color: #ffffff;
-        z-index: 1;
+        z-index: -1;
         transform: translateX(100%);
         transition: all 1s;
         opacity: 0;
-        text-align: left;
     }
     nav ul.slide {
         opacity: 1;
         transform: translateX(0);
-        
-    }
-    .box{
-        padding-top: 10px;
     }
 }
-
-
-@media only screen and (max-width: 414px) {
-    /* For mobile phones: */
-    .footer-watch{
-        width: auto;
-
-
-    }
-    .products-title{
-        font-size: 20px;
-        margin-bottom: -4rem;
-    }
-    .services-title{
-        font-size: 20px;
-    }
-    .lokasi{
-        width: 20rem;
-    }
-    footer .footer_main{
-        width: 20rem;
-        background:#191825;
-        display: flex;
-        justify-content: space-around;
-      
-    }
-    a.ttle-footer{
-        font-size: 10px;
-    }
-    .see-more-text{
-        left: 0;
-    }
- }
