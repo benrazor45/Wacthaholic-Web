@@ -130,4 +130,8 @@ button {
   .wrapper {
     width: 65%;
   }
+  .login_form #pass_error,
+  .login_form #pass1_error {
+    width: 100%;
+  }
 }
