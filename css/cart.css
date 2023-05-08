@@ -353,9 +353,7 @@ ul{
     nav ul {
        width: 50%;
     }
-    .cart-info p{
-        display:none;
-    }
+
 
 }
 
@@ -389,9 +387,7 @@ ul{
             opacity: 1;
             transform: translateX(0);
         }
-        .cart-info p {
-            display: none;
-        }
+       
      
     }
 
@@ -441,4 +437,5 @@ ul{
     .footer-col{
      width: 100%;
   }
+
   }
